@@ -11,6 +11,15 @@ public class Libro {
         this.anio = anio;
     }
 
+    public Libro(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public Libro(String titulo, String autor) {
+        this.titulo = titulo;
+        this.autor = autor;
+    }
+
     public String getTitulo() {
         return titulo;
     }
@@ -37,10 +46,11 @@ public class Libro {
 
     @Override
     public String toString() {
-        return "[ Titulo: " + titulo +
-                ", Autor: " + autor +
-                ", Anio: " + anio +
-                " ]";
+        return "Libro{" +
+                "titulo='" + titulo + '\'' +
+                ", autor='" + autor + '\'' +
+                ", anio=" + anio +
+                '}';
     }
 
     @Override
